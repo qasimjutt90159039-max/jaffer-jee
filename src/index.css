@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Jafferjees Luxury Leather Palette */
+    --color-parchment-base: #FAF8F5;
+    --color-parchment-soft: #F4EFEB;
+    --color-parchment-sand: #EAE3D9;
+    
+    /* Deep Rich Leathers */
+    --color-espresso-950: #19100B;
+    --color-espresso-900: #25160E;
+    --color-espresso-800: #382216;
+    
+    /* Cognac & Chestnut */
+    --color-cognac-700: #6B3B1E;
+    --color-cognac-600: #8C522F;
+    --color-cognac-500: #A8673E;
+    --color-cognac-400: #C28359;
+
+    /* Champagne Gold & Brass */
+    --color-gold-600: #9E7D3B;
+    --color-gold-500: #BFA054;
+    --color-gold-400: #D8BA73;
+    --color-gold-100: #FBF6E9;
+
+    /* Typography */
+    --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-parchment-base);
+    color: #1F1D1B;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+}
+
+.font-serif-luxury {
+  font-family: var(--font-heading);
+}
+
+.font-sans-clean {
+  font-family: var(--font-body);
+}
+
+/* Subtle hand-stitch effect for leather styling */
+.border-saddle-stitch {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(140, 82, 47, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A8823B 0%, #D8BA73 50%, #BFA054 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leather-texture-overlay {
+  background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
+  background-size: 8px 8px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4B5A5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C522F;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

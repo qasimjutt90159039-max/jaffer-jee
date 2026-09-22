@@ -1,0 +1,6 @@
+{
+  "name": "Jafferjees - Sharif Complex Gulgasht Multan",
+  "description": "Premium leather goods store in Sharif Complex, Gulgasht Multan. Handcrafted leather wallets, formal belts, messenger bags, handbags, executive office bags, travel bags, and bespoke leather accessories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
